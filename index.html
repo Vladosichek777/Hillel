@@ -5,11 +5,385 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page for git hw</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Page for hw</title>
 </head>
 
 <body>
-
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__top">
+                    <div class="header__top-img">
+                        <a href="">
+                            <img class="header__top-img__item" src="./assets/img/лого.png" width="244" height="45"
+                                alt="logo">
+                        </a>
+                    </div>
+                    <div class="header__top-icons">
+                        <a href="tel:+380991716315" class="header__top-icons__link">
+                            <p class="header__number">8 920 999 43 50</p>
+                        </a>
+                        <div class="shopping-cart">
+                            <a href="#">
+                                <img class="header__top-icons__shopping-cart" src="./assets/svg/корзина.svg"
+                                    alt="shopping-cart" width="30" height="30">
+                            </a>
+                        </div>
+                        <div class="account">
+                            <a href="#">
+                                <img class="header__top-icons__account" src="./assets/svg/аккаунт.svg" alt="account"
+                                    width="30" height="30">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li class="header__list__inner arrow">
+                                <a href="#" class="header__list__item">Каталог</a>
+                            </li>
+                            <li class="header__list__inner">
+                                <a href="#" class="header__list__item">О проекте</a>
+                            </li>
+                            <li class="header__list__inner">
+                                <a href="#" class="header__list__item">Птицы</a>
+                            </li>
+                            <li class="header__list__inner">
+                                <a href="#" class="header__list__item">Пожертвования</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <form class="header__search" action="#">
+                        <label class="header__search-label">
+                            <input class="header__search__input" type="text" placeholder="Поиск">
+                            <a class="header__search__link" href="#">
+                                <img class="header__search__img" src="./assets/svg/Search.svg" alt="Search" width="30"
+                                    height="31">
+                            </a>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="main__inner">
+                <div class="main__current-location">
+                    <ul class="main__current-location__list">
+                        <li class="current-location__list-item">
+                            <a href="" class="current-location__list-link">Каталог</a>
+                        </li>
+                        <li class="current-location__list-item">
+                            <a href="" class="current-location__list-link">Готовые миксы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="back">
+                    <a href="#" class="back-link">Назад</a>
+                </div>
+                <div class="cards-wrapper">
+                    <div class="cards-inner">
+                        <img class="cards-inner__img" src="./assets/img/корм.png" alt="корм" width="275" height="227">
+                        <h3 class="cards-inner__title">PADOVAN OVOMIX GOLD ROSSO</h3>
+                        <h3 class="cards-inner__subtitle">Корм для птиц</h3>
+                        <p class="cards-inner__price">1000 руб.</p>
+                        <form class="cards-inner__form">
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="first">
+                                <span class="cards-inner__text">200г</span>
+                            </label>
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="first">
+                                <span class="cards-inner__text">400г</span>
+                            </label>
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="first">
+                                <span class="cards-inner__text">800г</span>
+                            </label>
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="first">
+                                <span class="cards-inner__text">1кг</span>
+                            </label>
+                        </form>
+                        <div class="cards-inner__bottom">
+                            <button class="cards-inner__btn">Подробнее</button>
+                            <a class="cards-inner__bottom-link" href="#">
+                                <img class="cards-inner__bottom-img" src="./assets/svg/корзина.svg" alt="корзина.svg"
+                                    width="27" height="27">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cards-inner">
+                        <img class="cards-inner__img" src="./assets/img/корм.png" alt="корм" width="275" height="227">
+                        <h3 class="cards-inner__title">PADOVAN OVOMIX GOLD ROSSO</h3>
+                        <h3 class="cards-inner__subtitle">Корм для птиц</h3>
+                        <p class="cards-inner__price">1000 руб.</p>
+                        <form class="cards-inner__form">
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="second">
+                                <span class="cards-inner__text">200г</span>
+                            </label>
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="second">
+                                <span class="cards-inner__text">400г</span>
+                            </label>
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="second">
+                                <span class="cards-inner__text">800г</span>
+                            </label>
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="second">
+                                <span class="cards-inner__text">1кг</span>
+                            </label>
+                        </form>
+                        <div class="cards-inner__bottom">
+                            <button class="cards-inner__btn">Подробнее</button>
+                            <a class="cards-inner__bottom-link" href="#">
+                                <img class="cards-inner__bottom-img" src="./assets/svg/корзина.svg" alt="корзина.svg"
+                                    width="27" height="27">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cards-inner">
+                        <img class="cards-inner__img" src="./assets/img/корм.png" alt="корм" width="275" height="227">
+                        <h3 class="cards-inner__title">PADOVAN OVOMIX GOLD ROSSO</h3>
+                        <h3 class="cards-inner__subtitle">Корм для птиц</h3>
+                        <p class="cards-inner__price">1000 руб.</p>
+                        <form class="cards-inner__form">
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="third">
+                                <span class="cards-inner__text">200г</span>
+                            </label>
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="third">
+                                <span class="cards-inner__text">400г</span>
+                            </label>
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="third">
+                                <span class="cards-inner__text">800г</span>
+                            </label>
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="third">
+                                <span class="cards-inner__text">1кг</span>
+                            </label>
+                        </form>
+                        <div class="cards-inner__bottom">
+                            <button class="cards-inner__btn">Подробнее</button>
+                            <a class="cards-inner__bottom-link" href="#">
+                                <img class="cards-inner__bottom-img" src="./assets/svg/корзина.svg" alt="корзина.svg"
+                                    width="27" height="27">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cards-inner">
+                        <img class="cards-inner__img" src="./assets/img/корм.png" alt="корм" width="275" height="227">
+                        <h3 class="cards-inner__title">PADOVAN OVOMIX GOLD ROSSO</h3>
+                        <h3 class="cards-inner__subtitle">Корм для птиц</h3>
+                        <p class="cards-inner__price">1000 руб.</p>
+                        <form class="cards-inner__form">
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="fourth">
+                                <span class="cards-inner__text">200г</span>
+                            </label>
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="fourth">
+                                <span class="cards-inner__text">400г</span>
+                            </label>
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="fourth">
+                                <span class="cards-inner__text">800г</span>
+                            </label>
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="fourth">
+                                <span class="cards-inner__text">1кг</span>
+                            </label>
+                        </form>
+                        <div class="cards-inner__bottom">
+                            <button class="cards-inner__btn">Подробнее</button>
+                            <a class="cards-inner__bottom-link" href="#">
+                                <img class="cards-inner__bottom-img" src="./assets/svg/корзина.svg" alt="корзина.svg"
+                                    width="27" height="27">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cards-inner">
+                        <img class="cards-inner__img" src="./assets/img/корм.png" alt="корм" width="275" height="227">
+                        <h3 class="cards-inner__title">PADOVAN OVOMIX GOLD ROSSO</h3>
+                        <h3 class="cards-inner__subtitle">Корм для птиц</h3>
+                        <p class="cards-inner__price">1000 руб.</p>
+                        <form class="cards-inner__form">
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="five">
+                                <span class="cards-inner__text">200г</span>
+                            </label>
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="five">
+                                <span class="cards-inner__text">400г</span>
+                            </label>
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="five">
+                                <span class="cards-inner__text">800г</span>
+                            </label>
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="five">
+                                <span class="cards-inner__text">1кг</span>
+                            </label>
+                        </form>
+                        <div class="cards-inner__bottom">
+                            <button class="cards-inner__btn">Подробнее</button>
+                            <a class="cards-inner__bottom-link" href="#">
+                                <img class="cards-inner__bottom-img" src="./assets/svg/корзина.svg" alt="корзина.svg"
+                                    width="27" height="27">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cards-inner">
+                        <img class="cards-inner__img" src="./assets/img/корм.png" alt="корм" width="275" height="227">
+                        <h3 class="cards-inner__title">PADOVAN OVOMIX GOLD ROSSO</h3>
+                        <h3 class="cards-inner__subtitle">Корм для птиц</h3>
+                        <p class="cards-inner__price">1000 руб.</p>
+                        <form class="cards-inner__form">
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="six">
+                                <span class="cards-inner__text">200г</span>
+                            </label>
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="six">
+                                <span class="cards-inner__text">400г</span>
+                            </label>
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="six">
+                                <span class="cards-inner__text">800г</span>
+                            </label>
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="six">
+                                <span class="cards-inner__text">1кг</span>
+                            </label>
+                        </form>
+                        <div class="cards-inner__bottom">
+                            <button class="cards-inner__btn">Подробнее</button>
+                            <a class="cards-inner__bottom-link" href="#">
+                                <img class="cards-inner__bottom-img" src="./assets/svg/корзина.svg" alt="корзина.svg"
+                                    width="27" height="27">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cards-inner">
+                        <img class="cards-inner__img" src="./assets/img/корм.png" alt="корм" width="275" height="227">
+                        <h3 class="cards-inner__title">PADOVAN OVOMIX GOLD ROSSO</h3>
+                        <h3 class="cards-inner__subtitle">Корм для птиц</h3>
+                        <p class="cards-inner__price">1000 руб.</p>
+                        <form class="cards-inner__form">
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="seven">
+                                <span class="cards-inner__text">200г</span>
+                            </label>
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="seven">
+                                <span class="cards-inner__text">400г</span>
+                            </label>
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="seven">
+                                <span class="cards-inner__text">800г</span>
+                            </label>
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="seven">
+                                <span class="cards-inner__text">1кг</span>
+                            </label>
+                        </form>
+                        <div class="cards-inner__bottom">
+                            <button class="cards-inner__btn">Подробнее</button>
+                            <a class="cards-inner__bottom-link" href="#">
+                                <img class="cards-inner__bottom-img" src="./assets/svg/корзина.svg" alt="корзина.svg"
+                                    width="27" height="27">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cards-inner">
+                        <img class="cards-inner__img" src="./assets/img/корм.png" alt="корм" width="275" height="227">
+                        <h3 class="cards-inner__title">PADOVAN OVOMIX GOLD ROSSO</h3>
+                        <h3 class="cards-inner__subtitle">Корм для птиц</h3>
+                        <p class="cards-inner__price">1000 руб.</p>
+                        <form class="cards-inner__form">
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="eight">
+                                <span class="cards-inner__text">200г</span>
+                            </label>
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="eight">
+                                <span class="cards-inner__text">400г</span>
+                            </label>
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="eight">
+                                <span class="cards-inner__text">800г</span>
+                            </label>
+                            <label class="cards-inner__label">
+                                <input class="cards-inner__input" type="radio" name="eight">
+                                <span class="cards-inner__text">1кг</span>
+                            </label>
+                        </form>
+                        <div class="cards-inner__bottom">
+                            <button class="cards-inner__btn">Подробнее</button>
+                            <a class="cards-inner__bottom-link" href="#">
+                                <img class="cards-inner__bottom-img" src="./assets/svg/корзина.svg" alt="корзина.svg"
+                                    width="27" height="27">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom__nav">
+                    <a href="#">
+                        <img src="./assets/svg/Arrow-DownL.svg" alt="Arrow" class="bottom__arrow__left" width="16"
+                            height="16">
+                    </a>
+                    <ul class="bottom__nav-list">
+                        <li class="bottom__nav-list-item">
+                            <a href="#" class="bottom__nav-list-link active">1</a>
+                        </li>
+                        <li class="bottom__nav-list-item">
+                            <a href="#" class="bottom__nav-list-link">2</a>
+                        </li>
+                        <li class="bottom__nav-list-item">
+                            <a href="#" class="bottom__nav-list-link">3</a>
+                        </li>
+                    </ul>
+                    <a href="#">
+                        <img src="./assets/svg/Arrow-DownR.svg" alt="Arrow" class="bottom__arrow__right" width="16"
+                            height="16">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__left">
+                    <a href="">
+                        <p class="footer__left__item">Оплата</p>
+                    </a>
+                    <a href="">
+                        <p class="footer__left__item">Доставка</p>
+                    </a>
+                </div>
+                <div class="footer__icons">
+                    <a href="#">
+                        <img class="footer__icons__item" src="./assets/svg/vk.svg" alt="vk" width="25" height="25">
+                    </a>
+                    <a href="#">
+                        <img class="footer__icons__item" src="./assets/svg/inst.svg" alt="inst" width="25" height="25">
+                    </a>
+                </div>
+                <a href="tel:+380991716315" class="header__top-icons__link bottom">
+                    <p class="header__number bottom">8 920 999 43 50</p>
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
