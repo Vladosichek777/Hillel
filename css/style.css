@@ -19,6 +19,8 @@ body {
     width: 1325px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 15px;
+    box-sizing: content-box;
 }
 
 /*----------------------------------------------------------------------*/
@@ -100,6 +102,10 @@ body {
     height: 20px;
 }
 
+.account a {
+    display: inline-block;
+}
+
 .header__top-icons__account {
     width: 30px;
     height: 30px;
@@ -154,8 +160,6 @@ body {
     align-items: center;
     width: 345px;
     height: 54px;
-    left: 1273px;
-    top: 120px;
     background: #F2F2F2;
     border: 1px solid #BDBDBD;
     border-radius: 10px;
@@ -218,7 +222,6 @@ body {
     height: 6px;
     border-radius: 50%;
     background: #BDBDBD;
-    display: inline-block;
     margin-left: 15px;
 }
 
@@ -255,7 +258,6 @@ body {
     background-image: url(../assets/svg/стрелка-влево.svg);
     width: 18px;
     height: 18px;
-    display: inline-block;
     margin-right: 4px;
 }
 
@@ -273,11 +275,24 @@ body {
     box-shadow: -8px -8px 15px #FFFFFF, 8px 8px 15px rgba(0, 0, 0, 0.05);
     border-radius: 20px;
     padding: 20px 20px 30px;
-    gap: 25px;
 }
 
 .cards-inner:nth-last-child(n+5) {
     margin-bottom: 45px;
+}
+
+.new {
+    position: relative;
+}
+
+.new:after {
+    position: absolute;
+    content: "";
+    background-image: url(../assets/img/new.png);
+    width: 89px;
+    height: 35px;
+    top: 12px;
+    right: 12px;
 }
 
 .cards-inner__img {
@@ -476,6 +491,9 @@ body {
     margin-right: 47px;
 }
 
+.footer__icons {
+    font-size: 0;
+}
 
 .footer__icons__item {
     width: 25px;
