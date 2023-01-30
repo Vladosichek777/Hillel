@@ -24,14 +24,14 @@
 }
 
 
-.current {
-    &-location__list-item {
+.current-location {
+    &__list-item {
         display: flex;
         align-items: center;
         margin-right: 14px;
     }
     
-    &-location__list-item:not(:last-child)::after {
+    &__list-item:not(:last-child)::after {
         content: "";
         width: 6px;
         height: 6px;
@@ -41,11 +41,281 @@
     }
     
     
-    &-location__list-link {
-        @include fontsSetting('Gilroy', normal, 500, 21px);
+    &__list-link {
+        font-weight: 500;
+        line-height: 21px;
         font-size: map.get($font-size, "regular");
         color: #BDBDBD;
         text-decoration: none;
         display: inline-block;
     }
+}
+
+.back {
+    margin-bottom: 44px;
+    &-link {
+        display: inline-flex;
+        font-weight: 500;
+        font-size: map.get($font-size, "normal");
+        line-height: 24px;
+        color: #333333;
+        text-decoration: none;
+        align-items: center;
+    }
+    
+    &-link:before {
+        content: "";
+        background-image: url(../assets/svg/стрелка-влево.svg);
+        width: 18px;
+        height: 18px;
+        margin-right: 4px;
+    }
+
+}
+
+.cards {
+    &-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    &-inner {
+        width: 315px;
+        background: #F9F9F9;
+        border: 1px solid #F2F2F2;
+        box-shadow: -8px -8px 15px #FFFFFF, 8px 8px 15px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+        padding: 20px 20px 30px;
+
+        &__img {
+            margin-bottom: 25px;
+        }
+
+        &__title {
+            @include fontsSetting (600, 130%);
+        font-size: map.get($font-size,"large");
+        color: #333333;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-bottom: 5px;
+        }
+
+        &__subtitle {
+            @include fontsSetting (400, 130%);
+        font-size: map.get($font-size,"small");
+        color: #828282;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-bottom: 25px;
+        }
+
+        &__price {
+             font-size: map.get($font-size, "medium");
+             @include fontsSetting (700, 27px);
+            color: #333333;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            margin-bottom: 25px;
+        }
+
+        &__form {
+            display: flex;
+            justify-content: space-between;
+            width: 252px;
+            height: 29px;
+            margin-bottom: 25px;
+        }
+
+        &__label {
+            @include fontsSetting (500, 21px);
+            font-size: map.get($font-size, "regular");
+            color: #4F4F4F;
+            height: 29px;
+        }
+
+        &__input {
+            display: none;
+        }
+
+        &__text {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 68px;
+            height: 29px;
+        }
+        &__input:checked+.cards-inner__text {
+            border: 1px solid #3ECF5E;
+            border-radius: 5px;
+        }
+
+        &__bottom {
+            width: 275px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__btn {
+            padding: 12px 32px;
+            border-width: 0;
+            background-color: #3FCF5E;
+            border: 1px solid rgba(5, 175, 52, 0.53);
+            border-radius: 10px;
+            @include fontsSetting (600, 21px);
+            font-size: map.get($font-size, "regular");
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+        &__bottom-link {
+            display: inline-block;
+            border: 1px solid #BDBDBD;
+            border-radius: 10px;
+            padding: 9px 10px;
+        }
+
+        &__bottom-img {
+            width: 27px;
+            height: 27px;
+        }
+    }
+}
+
+.bottom {
+    &__nav {
+        margin-top: 50px;
+        height: 21px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__arrow__left {
+        margin-right: 25px;
+        width: 16px;
+        height: 16px;
+    }
+    
+    &__arrow__right {
+        margin-left: 25px;
+        width: 16px;
+        height: 16px;
+    }
+    
+    &__nav-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0;
+        list-style-type: none;
+    }
+    
+    &__nav-list-item:not(:last-child) {
+        margin-right: 20px;
+    }
+    
+    &__nav-list-link {
+        font-family: 'Roboto';
+        font-style: normal;
+        @include fontsSetting(700, 21px);
+        font-size: map.get($font-size, "regular");
+        color: #828282;
+        text-decoration: none;
+    }
+}
+
+.footer {
+    background: #333333;
+
+    &__inner {
+        padding: 100px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+    &__left {
+        display: flex;
+        align-items: center;
+
+        &__item {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        @include fontsSetting (500, 21px);
+        font-size: map.get($font-size, "regular");
+        color: #FFFFFF;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+
+        a:not(:last-child) {
+            margin-right: 47px;
+        }
+    }
+    &__icons {
+        font-size: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &__item {
+            width: 25px;
+            height: 25px;
+        }
+
+        a {
+            display: inline-block;
+        }
+
+        a:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+}
+.active {
+    color: #219653;
+}
+
+.new {
+    position: relative;
+}
+
+.new:after {
+    position: absolute;
+    content: "";
+    background-image: url(../assets/img/new.png);
+    width: 89px;
+    height: 35px;
+    top: 12px;
+    right: 12px;
+}
+
+.bottom {
+    margin-right: 0;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.header__number.bottom:before {
+    content: "";
+    background-image: url(../assets/svg/carbon_phone-white.svg);
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 9px;
 }

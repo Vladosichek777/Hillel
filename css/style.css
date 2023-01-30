@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(../assets/fonts/Gilroy/stylesheet.css);
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -534,14 +535,434 @@ body {
   margin-left: 15px;
 }
 .current-location__list-link {
-  font-family: "Gilroy";
-  font-style: normal;
   font-weight: 500;
   line-height: 21px;
   font-size: 18px;
   color: #BDBDBD;
   text-decoration: none;
   display: inline-block;
+}
+
+.back {
+  margin-bottom: 44px;
+}
+.back-link {
+  display: inline-flex;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+  text-decoration: none;
+  align-items: center;
+}
+.back-link:before {
+  content: "";
+  background-image: url(../assets/svg/стрелка-влево.svg);
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
+}
+
+.cards-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.cards-inner {
+  width: 315px;
+  background: #F9F9F9;
+  border: 1px solid #F2F2F2;
+  box-shadow: -8px -8px 15px #FFFFFF, 8px 8px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding: 20px 20px 30px;
+}
+.cards-inner__img {
+  margin-bottom: 25px;
+}
+.cards-inner__title {
+  font-weight: 600;
+  line-height: 130%;
+  font-size: 24px;
+  color: #333333;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 5px;
+}
+.cards-inner__subtitle {
+  font-weight: 400;
+  line-height: 130%;
+  font-size: 16px;
+  color: #828282;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 25px;
+}
+.cards-inner__price {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #333333;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 25px;
+}
+.cards-inner__form {
+  display: flex;
+  justify-content: space-between;
+  width: 252px;
+  height: 29px;
+  margin-bottom: 25px;
+}
+.cards-inner__label {
+  font-weight: 500;
+  line-height: 21px;
+  font-size: 18px;
+  color: #4F4F4F;
+  height: 29px;
+}
+.cards-inner__input {
+  display: none;
+}
+.cards-inner__text {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 68px;
+  height: 29px;
+}
+.cards-inner__input:checked + .cards-inner__text {
+  border: 1px solid #3ECF5E;
+  border-radius: 5px;
+}
+.cards-inner__bottom {
+  width: 275px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cards-inner__btn {
+  padding: 12px 32px;
+  border-width: 0;
+  background-color: #3FCF5E;
+  border: 1px solid rgba(5, 175, 52, 0.53);
+  border-radius: 10px;
+  font-weight: 600;
+  line-height: 21px;
+  font-size: 18px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.cards-inner__bottom-link {
+  display: inline-block;
+  border: 1px solid #BDBDBD;
+  border-radius: 10px;
+  padding: 9px 10px;
+}
+.cards-inner__bottom-img {
+  width: 27px;
+  height: 27px;
+}
+
+.bottom__nav {
+  margin-top: 50px;
+  height: 21px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom__arrow__left {
+  margin-right: 25px;
+  width: 16px;
+  height: 16px;
+}
+.bottom__arrow__right {
+  margin-left: 25px;
+  width: 16px;
+  height: 16px;
+}
+.bottom__nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  list-style-type: none;
+}
+.bottom__nav-list-item:not(:last-child) {
+  margin-right: 20px;
+}
+.bottom__nav-list-link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  font-size: 18px;
+  color: #828282;
+  text-decoration: none;
+}
+
+.footer {
+  background: #333333;
+}
+.footer__inner {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.footer__left {
+  display: flex;
+  align-items: center;
+}
+.footer__left__item {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-weight: 500;
+  line-height: 21px;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+.footer__left a {
+  text-decoration: none;
+}
+.footer__left a:not(:last-child) {
+  margin-right: 47px;
+}
+.footer__icons {
+  font-size: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.footer__icons__item {
+  width: 25px;
+  height: 25px;
+}
+.footer__icons a {
+  display: inline-block;
+}
+.footer__icons a:not(:last-child) {
+  margin-right: 20px;
+}
+
+.active {
+  color: #219653;
+}
+
+.new {
+  position: relative;
+}
+
+.new:after {
+  position: absolute;
+  content: "";
+  background-image: url(../assets/img/new.png);
+  width: 89px;
+  height: 35px;
+  top: 12px;
+  right: 12px;
+}
+
+.bottom {
+  margin-right: 0;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.header__number.bottom:before {
+  content: "";
+  background-image: url(../assets/svg/carbon_phone-white.svg);
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 9px;
+}
+
+.main__inner {
+  padding-top: 50px;
+  padding-bottom: 169px;
+}
+
+.block-wrapper__title {
+  font-weight: 500;
+  line-height: 21px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 18px;
+  color: #BDBDBD;
+  margin-bottom: 10px;
+}
+.block-inner__item {
+  padding: 25px 27px;
+  background-color: #ffffff;
+  display: flex;
+  border: 1px solid #F2F2F2;
+}
+.block-inner__img {
+  margin-right: 15px;
+}
+.block-block-inner__img__item {
+  width: 129px;
+  height: 140px;
+}
+.block-inner__someinfo__title {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-weight: 600;
+  line-height: 29px;
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 9px;
+}
+.block-inner__someinfo__article {
+  display: block;
+  font-weight: 500;
+  line-height: 21px;
+  font-size: 18px;
+  color: #BDBDBD;
+  margin-bottom: 52px;
+}
+.block-inner__someinfo__price {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #828282;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.block-inner__someinfo__price span {
+  font-weight: 600;
+  line-height: 29px;
+  font-size: 24px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #333333;
+}
+.block-inner__number {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.block-inner__number h4 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-weight: 500;
+  line-height: 130%;
+  font-size: 18px;
+  color: #BDBDBD;
+  margin-bottom: 10px;
+}
+.block-inner__number__btn {
+  display: flex;
+  margin-bottom: 30px;
+}
+.block-inner__number__btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: #FFFFFF;
+  border: 1px solid #00C620;
+  border-radius: 5px;
+  padding: 0;
+}
+.block-inner__number__btn input {
+  font-weight: 600;
+  line-height: 29px;
+  font-size: 24px;
+  width: 50px;
+  text-align: center;
+  color: #4F4F4F;
+  border: none;
+}
+.block-inner__number p {
+  font-weight: 500;
+  line-height: 28px;
+  font-size: 24px;
+  color: #828282;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.block-inner__number p span {
+  color: #333333;
+}
+
+.donation {
+  background-color: #3FCF5E;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  padding-left: 172px;
+  margin-bottom: 50px;
+}
+.donation__title {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-weight: 600;
+  line-height: 29px;
+  font-size: 24px;
+  color: #FFFFFF;
+  margin-bottom: 33px;
+}
+.donation__form form {
+  display: flex;
+}
+.donation__form form input {
+  width: 234px;
+  height: 51px;
+  padding: 0;
+  font-weight: 500;
+  line-height: 21px;
+  font-size: 22px;
+  padding: 15px;
+  color: #4F4F4F;
+  border-width: 0;
+  margin-right: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+}
+.donation__form form button {
+  display: block;
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 15px 40px;
+  border-radius: 10px;
+  font-weight: 500;
+  line-height: 21px;
+  font-size: 18px;
+  color: #333333;
+  cursor: pointer;
+  border: none;
+}
+.donation__subbutton {
+  display: block;
+  background-color: #3FCF5E;
+  color: #FFFFFF;
+  border-radius: 10px;
+  padding: 15px 66.5px;
+  border-radius: 10px;
+  font-weight: 500;
+  line-height: 21px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  margin-left: auto;
+  margin-bottom: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */
