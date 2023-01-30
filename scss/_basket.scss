@@ -1,0 +1,193 @@
+@use "sass:map";
+@use "variables" as*;
+
+.main__inner {
+    padding-top: 50px;
+    padding-bottom: 169px;
+}
+
+.block {
+    &-wrapper__title {
+        @include fontsSetting (500,21px);
+        margin-block-start: 0;
+        margin-block-end: 0;
+        font-size: map.get($font-size, 'regular');
+        color: #BDBDBD;
+        margin-bottom: 10px;
+    }
+
+    &-inner__item {
+        padding: 25px 27px;
+        background-color: #ffffff;
+        display: flex;
+        border: 1px solid #F2F2F2;
+    }
+
+    &-inner__img {
+        margin-right: 15px;
+    }
+
+    &-block-inner__img__item {
+        width: 129px;
+        height: 140px;
+    }
+
+    &-inner__someinfo__title {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        @include fontsSetting (600,29px);
+        font-size: map.get($font-size, 'large');
+        color: #333333;
+        margin-bottom: 9px;
+    }
+
+    &-inner__someinfo__article {
+        display: block;
+        @include fontsSetting (500,21px);
+        font-size: map.get($font-size, 'regular');
+        color: #BDBDBD;
+        margin-bottom: 52px;
+    }
+
+    &-inner__someinfo__price {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        color: #828282;
+        margin-block-start: 0;
+        margin-block-end: 0;
+
+        span {
+            @include fontsSetting (600,29px);
+            font-size: map.get($font-size, 'large');
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            color: #333333;
+        }
+    }
+
+    &-inner__number {
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h4 {
+            margin-block-start: 0;
+            margin-block-end: 0;
+            @include fontsSetting (500,130%);
+            font-size: map.get($font-size, 'regular');
+            color: #BDBDBD;
+            margin-bottom: 10px;
+        }
+
+        &__btn {
+            display: flex;
+            margin-bottom: 30px;
+
+            button {
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                width: 32px;
+                height: 32px;
+                background: #FFFFFF;
+                border: 1px solid #00C620;
+                border-radius: 5px;
+                padding: 0;
+            }
+
+            input {
+                @include fontsSetting (600,29px);
+                font-size: map.get($font-size, 'large');
+                width: 50px;
+                text-align: center;
+                color: #4F4F4F;
+                border: none;
+
+            }
+        }
+
+        p {
+            @include fontsSetting (500,28px);
+            font-size: map.get($font-size, 'large');
+            color: #828282;
+            margin-block-start:0;
+            margin-block-end: 0;
+
+            span {
+                color: #333333;
+            }
+        }
+    }
+
+    
+}
+
+.donation {
+    background-color: #3FCF5E;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-left: 172px;
+    margin-bottom: 50px;
+
+    &__title {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        @include fontsSetting (600,29px);
+        font-size: map.get($font-size, 'large');
+        color: #FFFFFF;
+        margin-bottom: 33px;
+    }
+
+    &__form {
+        form {
+            display: flex;
+
+            input {
+                width: 234px;
+                 height: 51px;
+                padding:0;
+                @include fontsSetting (500,21px);
+                font-size: map.get($font-size, 'medium');
+                padding: 15px;
+                color: #4F4F4F;
+                border-width: 0;
+                margin-right: 20px;
+                background-color: rgba(255, 255, 255, 0.7);
+                border: 1px solid #FFFFFF;
+                border-radius: 10px;
+            }
+            button {
+                display: block;
+                background: #FFFFFF;
+                border-radius: 10px;
+                padding: 15px 40px;
+                border-radius: 10px;
+                @include fontsSetting (500,21px);
+                font-size: map.get($font-size, 'regular');
+                color: #333333;
+                cursor: pointer;
+                border: none;
+            }
+        }
+        
+    }
+
+    &__subbutton {
+        display: block;
+        background-color: #3FCF5E;
+        color: #FFFFFF;
+        border-radius: 10px;
+        padding: 15px 66.5px;
+        border-radius: 10px;
+        @include fontsSetting (500,21px);
+        font-size: map.get($font-size, 'regular');
+        cursor: pointer;
+        border: none;
+        margin-left: auto;
+        margin-bottom: 60px;
+    }
+}
+

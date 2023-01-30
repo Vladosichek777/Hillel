@@ -1,0 +1,7 @@
+$font-size: ("small": 16px, "regular":18px,"normal":20px, "medium":22px, "large":24px );
+
+@mixin fontsSetting ($font-weight,$lh) {
+    font-weight: $font-weight;
+    line-height: $lh;
+}
+
