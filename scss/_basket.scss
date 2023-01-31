@@ -180,7 +180,6 @@
         color: #FFFFFF;
         border-radius: 10px;
         padding: 15px 66.5px;
-        border-radius: 10px;
         @include fontsSetting (500,21px);
         font-size: map.get($font-size, 'regular');
         cursor: pointer;
