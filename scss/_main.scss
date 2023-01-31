@@ -124,7 +124,6 @@
             display: flex;
             justify-content: space-between;
             width: 252px;
-            height: 29px;
             margin-bottom: 25px;
         }
 
@@ -132,7 +131,6 @@
             @include fontsSetting (500, 21px);
             font-size: map.get($font-size, "regular");
             color: #4F4F4F;
-            height: 29px;
         }
 
         &__input {

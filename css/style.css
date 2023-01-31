@@ -611,7 +611,6 @@ body {
   display: flex;
   justify-content: space-between;
   width: 252px;
-  height: 29px;
   margin-bottom: 25px;
 }
 .cards-inner__label {
@@ -619,7 +618,6 @@ body {
   line-height: 21px;
   font-size: 18px;
   color: #4F4F4F;
-  height: 29px;
 }
 .cards-inner__input {
   display: none;
