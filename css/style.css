@@ -887,6 +887,7 @@ body {
   text-align: center;
   color: #4F4F4F;
   border: none;
+  margin-left: 20px;
 }
 .block-inner__number p {
   font-weight: 500;
@@ -958,7 +959,14 @@ body {
   cursor: pointer;
   border: none;
   margin-left: auto;
-  margin-bottom: 60px;
+  margin-right: 25px;
+}
+
+.wrapper__backgr {
+  background-color: #FFFFFF;
+  padding-bottom: 60px;
+  border-radius: 10px;
+  border: 1px solid #F2F2F2;
 }
 
 /*# sourceMappingURL=style.css.map */
